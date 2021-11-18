@@ -1,6 +1,8 @@
+import { Header } from "./components/Header";
+
 function App() {
   return (
-    <h1>Projeto Proft-e</h1>
+    <Header />
   )
 }
 
