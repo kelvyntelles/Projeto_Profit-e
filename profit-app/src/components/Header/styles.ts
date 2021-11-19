@@ -1,12 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
+    margin: 0 auto;
+    max-width: 100%;
     background: #FFFFFF;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    left: 0px;
-    top: 0px;
 `
 
 export const Content = styled.div`
@@ -14,44 +11,31 @@ export const Content = styled.div`
     margin: 0 auto;
 
     padding: 1rem 1rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     align-items: center;
-    
-    .logo {
-        padding: 1rem 0 0 8rem;
-    }
+    background: #FFFFFF;
 
-    form {
-        border: 0;
-        border-radius: 0.25rem;
-        height: 3rem;
-        font-size: 1rem;
-        padding-top: 1rem;
-        
-        input {
-            border: 0;
-            padding: 0 2rem 0 0;
-            font-size: 1rem;
-        }  
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 2rem;
 
-        img {
-            height: 15px;
-        }
-    }
+        display: grid;
+        grid-template-columns: 250px 270px 250px 250px;
 
-    .minha_conta {
-        height: 3rem;
-        font-size: 1rem;
-        padding-top: 0.5rem;
+        li {
+            form {
+                border: 0;
+                border-radius: 0.25rem;
+                height: 3rem;
 
-        a {
-            margin-right: 1rem;
-            font-size: 1.5rem;
-        }
-
-        img {
-            margin-right: 1rem;
+                input {
+                    border: 0;
+                    padding-top: 0.2rem;
+                    font-size: 1rem;
+                }
+            }
         }
     }
 `
