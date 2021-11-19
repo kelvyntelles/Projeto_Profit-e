@@ -31,7 +31,7 @@ export const Content = styled.div`
         
         input {
             border: 0;
-            padding: 1rem 2rem 0 0;
+            padding: 0 2rem 0 0;
             font-size: 1rem;
         }  
 
