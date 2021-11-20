@@ -9,33 +9,21 @@ export const Container = styled.header`
 export const Content = styled.div`
     max-width: 1120px;
     margin: 0 auto;
-
     padding: 1rem 1rem 2rem;
-    display: flex;
-    align-items: center;
     background: #FFFFFF;
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        padding-left: 2rem;
-
+    .header {
         display: grid;
-        grid-template-columns: 250px 270px 250px 250px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
-        li {
-            form {
-                border: 0;
-                border-radius: 0.25rem;
-                height: 3rem;
-
-                input {
-                    border: 0;
-                    padding-top: 0.2rem;
-                    font-size: 1rem;
-                }
-            }
+        .headerDireita {
+            text-align: right;
+            
+            input {
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+            } 
         }
     }
 `

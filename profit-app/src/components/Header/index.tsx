@@ -13,21 +13,23 @@ export function Header() {
     return (
         <Container>
             <Content>
-                <ul>
-                    <li><img className="logo" src={logoImg} alt="profit e" /></li>
-                    <li>
+                <div className="header">
+                    <div>
+                        <a type="button"><img className="logo" src={logoImg} alt="profit e" /></a>
+                    </div>
+                    <div className="headerDireita">
                         <form>
                             <input type="text" placeholder="O que está procurando?"/>
-                            <img src={lupaImg} alt="buscar" />
+                            <a type="button"><img src={lupaImg} alt="buscar" /></a>
                         </form>
-                    </li>
-                    <li>
-                        <a>Minha Conta</a>
-                    </li>
-                    <li>
-                        <img src={vectorImg} alt="carrinho" />
-                    </li>
-                </ul>
+                    </div>
+                    <div className="headerDireita">
+                        <a type="button"><h5>Minha Conta</h5></a>
+                    </div>
+                    <div className="headerDireita">
+                        <a type="button"><img src={vectorImg} alt="carrinho" /></a>
+                    </div>
+                </div>
             </Content>        
         </Container>
     );
