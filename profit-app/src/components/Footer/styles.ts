@@ -68,4 +68,27 @@ export const Content = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    @media screen and (max-width: 810px) {
+        display: grid;
+        grid-template-columns: 2fr; ;
+        grid-template-rows: 2fr;
+
+        .centroFooter {
+            padding-left: 4%;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .buttonFooter {
+                margin-right: 15%;
+            }
+        }
+        
+        .direitaFooter {
+            padding-top: 1rem;
+            padding-left: 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 `
