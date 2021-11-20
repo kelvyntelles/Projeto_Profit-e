@@ -54,5 +54,33 @@ export const Content = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 862px) {
+        padding-left: 6rem;
+
+        .listaProdutos {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 2fr 2fr;
+
+            .item {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 542px) {
+        padding-left: 30%;
+
+        .listaProdutos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            .item {
+                margin-bottom: 2rem;
+            }
+        }
+    }
 `
 
