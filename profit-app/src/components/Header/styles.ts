@@ -26,4 +26,13 @@ export const Content = styled.div`
             } 
         }
     }
+
+    @media screen and (max-width: 862px) {
+        .header {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            align-items: center;
+        }
+    }
 `

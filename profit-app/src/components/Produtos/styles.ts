@@ -28,6 +28,7 @@ export const Content = styled.div`
 
             .imagemProduto {
                 width: 120px;
+                height: 120px;
                 padding-top: 1rem;
                 padding-bottom: 1rem;
             }

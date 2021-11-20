@@ -53,6 +53,12 @@ export const Content = styled.div`
             border: 0;
             color: #FFFFFF;
             margin-bottom: 1rem;
+
+            transition: filter 0.2s;
+
+            &:hover {
+                filter: brightness(0.9);
+            }
         }
     }
     
