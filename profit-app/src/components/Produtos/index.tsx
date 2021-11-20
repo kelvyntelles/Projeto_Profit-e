@@ -1,7 +1,14 @@
+import { useEffect } from "react";
+import { api } from '../../services/api';
 import { Container, Content } from "./styles";
 import tenis1 from '../../assets/tenis1.jpg';
 
 export function Produtos() {
+    useEffect(() => {
+        api.get('http://localhost:3000/api/produtos')
+            .then(response => console.log(response.data))
+    }, []);
+
     return (
         <Container>
             <Content>
